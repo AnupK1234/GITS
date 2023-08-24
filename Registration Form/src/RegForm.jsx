@@ -57,9 +57,9 @@ const RegForm = () => {
 
   return (
     <div>
-      <div className="mt-5 mb-5">
-        <img src={logo} alt="Gits logo" className="h-40 w-50 mx-auto" />
-        <p className="text-center mt-2 text-3xl font-bold">
+      <div className="mb-5 relative">
+        <img src={logo} alt="Gits logo" className="py-1 h-40 w-50 mx-auto" />
+        <p className="text-white text-center mt-2 text-3xl font-bold">
           GITS Event Registration
         </p>
       </div>
@@ -67,7 +67,7 @@ const RegForm = () => {
       <div className="flex justify-center">
         <form onSubmit={handleSubmit}>
           <div className="flex flex-col">
-            <label for="name" className="text-xl font-semibold">
+            <label htmlFor="name" className="text-white text-xl font-semibold">
               Name:
             </label>
             <input
@@ -78,7 +78,7 @@ const RegForm = () => {
               onChange={(e) => setName(e.target.value)}
             />
 
-            <label for="email" className="text-xl font-semibold">
+            <label htmlFor="email" className="text-white text-xl font-semibold">
               Email:
             </label>
             <input
@@ -90,7 +90,7 @@ const RegForm = () => {
               onChange={(e) => setEmail(e.target.value)}
             />
 
-            <label for="year" className="text-xl font-semibold">
+            <label htmlFor="year" className="text-white text-xl font-semibold">
               Year:
             </label>
             <select
@@ -115,7 +115,10 @@ const RegForm = () => {
             </select>
 
             <div className="mb-2">
-              <label for="division" className="text-xl font-semibold">
+              <label
+                htmlFor="division"
+                className="text-white text-xl font-semibold"
+              >
                 Division:
               </label>
               <br />
@@ -126,7 +129,7 @@ const RegForm = () => {
                 checked={division === "A"}
                 onChange={setDivision}
               />
-              <label className="text-2xl">A </label>
+              <label className="text-white text-2xl">A </label>
               <input
                 type="radio"
                 name="division"
@@ -134,10 +137,10 @@ const RegForm = () => {
                 checked={division === "B"}
                 onChange={setDivision}
               />
-              <label className="text-2xl">B</label>
+              <label className="text-white text-2xl">B</label>
             </div>
 
-            <label for="roll" className="text-xl font-semibold">
+            <label htmlFor="roll" className="text-white text-xl font-semibold">
               Roll No:
             </label>
             <input
@@ -150,7 +153,7 @@ const RegForm = () => {
               onChange={(e) => setRollNo(e.target.value)}
             />
 
-            <label for="phone" className="text-xl font-semibold">
+            <label htmlFor="phone" className="text-white text-xl font-semibold">
               Mobile No:
             </label>
             <input
@@ -163,7 +166,7 @@ const RegForm = () => {
             />
 
             <div>
-              <label className="text-xl font-semibold mr-2">
+              <label className="text-white text-xl font-semibold mr-2">
                 Payment QR Code:
               </label>
               <button
@@ -183,7 +186,7 @@ const RegForm = () => {
                     alt="QR Code"
                     className="mx-auto max-w-full h-auto bg-stone-200"
                   />
-                  
+
                   {/* Close QR code card */}
                   <button
                     className="block mx-auto mt-2 bg-red-500 hover:bg-red-600 text-white px-2 py-1 rounded"
@@ -195,7 +198,10 @@ const RegForm = () => {
               </div>
             )}
 
-            <label for="tranID" className="text-xl font-semibold">
+            <label
+              htmlFor="tranID"
+              className="text-white text-xl font-semibold"
+            >
               Transaction ID:
             </label>
             <input
