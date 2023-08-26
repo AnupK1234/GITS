@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins',sans-serif;
+  background-image: url(star-points-stains-effect.jpg);
 }
 body{
   min-height: 100vh;
@@ -12,8 +13,9 @@ body{
   justify-content: center;
   align-items: center;
   padding: 10px;
-  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  background: linear-gradient(135deg,  #71b7e6, #9b59b6);
 }
+
 .box{
   position: relative;
   width: 200px;
@@ -69,6 +71,7 @@ body{
   transition: 0.5s;
   pointer-events: none;
  }
+
 .container{
   max-width: 700px;
   width: 100%;
@@ -92,7 +95,7 @@ body{
   height: 3px;
   width: 30px;
   border-radius: 5px;
-  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  background: linear-gradient(135deg, #032cfc,#6603fc);
 }
 .content form .user-details{
   display: flex;
@@ -216,3 +219,4 @@ form .user-details .input-box{
     flex-direction: column;
   }
 }
+
