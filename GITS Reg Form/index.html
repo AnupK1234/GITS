@@ -27,12 +27,12 @@
           </div>
           <div class="input-box">
             <span class="details">Phone Number</span>
-            <input type="number" placeholder="Enter your number" name="pnumber" required>
+            <input type="tel" placeholder="Enter your number" name="pnumber" pattern="\d{10}" required>
           </div>
           <div class="input-box">
             <span class="details">Branch</span>
             <select class="select" id="Branch" required>
-              <option value="" class="op" selected>--Choose Branch--</option>
+              <option value="" class="op" selected disabled>--Choose Branch--</option>
               <option value="COMP" class="op">COMPUTER</option>
               <option value="IT" class="op">INFORMATION TECHNOLOGY</option>
               <option value="MECH" class="op">MECHANICAL</option>
@@ -47,7 +47,7 @@
           <div class="input-box">
             <span class="details">Year</span>
             <select class="select" id="yearSelect" required>
-              <option value="" class="op" selected>--Choose Year--</option>
+              <option value="" class="op" selected disabled>--Choose Year--</option>
               <option value="FE" class="op">FE</option>
               <option value="SE" class="op">SE</option>
               <option value="TE" class="op">TE</option>
@@ -57,7 +57,7 @@
           <div class="input-box">
             <span class="details">Division</span>
             <select class="select" id="divisionSelect" required>
-              <option value="" class="op" selected>--Choose Division--</option>
+              <option value="" class="op" selected disabled>--Choose Division--</option>
               <option value="A" class="op">A</option>
               <option value="B" class="op">B</option>
             </select>
@@ -80,7 +80,7 @@
           </div>
           <div class="input-box">
             <span class="details">Team Leader's Mobile Number</span>
-            <input type="number" placeholder="Enter Team Leader's number" name="tmnumber" required>
+            <input type="tel" placeholder="Enter Team Leader's number" name="tmnumber" pattern="\d{10}" required>
           </div>
           <div class="input-box">
             <span class="details">Team Leader's Email Id</span>
@@ -96,7 +96,7 @@
           </div>
           <div class="input-box">
             <span class="details">Mobile Number of Player-1</span>
-            <input type="number" placeholder="Enter your mobile no here" name="tp1number" required>
+            <input type="tel" placeholder="Enter your mobile no here" name="tp1number" pattern="\d{10}" required>
           </div>
           <div class="input-box">
             <span class="details">Team Player-2 Name</span>
@@ -107,8 +107,8 @@
             <input type="text" placeholder="Enter your game name" name="tmg2name" required>
           </div>
           <div class="input-box">
-            <span class="details">Mobile Number Player-2</span>
-            <input type="number" placeholder="Enter your mobile no here" name="tp2number" required>
+            <span class="details">Mobile Number of Player-2</span>
+            <input type="tel" placeholder="Enter your mobile no here" name="tp2number" pattern="\d{10}" required>
           </div>
           <div class="input-box">
             <span class="details">Team Player-3 Name</span>
@@ -119,8 +119,8 @@
             <input type="text" placeholder="Enter your game  name" name="tmg3name" required>
           </div>
           <div class="input-box">
-            <span class="details">Mobile Number Player-3</span>
-            <input type="number" placeholder="Enter your mobile no here" name="tp3number" required>
+            <span class="details">Mobile Number of Player-3</span>
+            <input type="tel" placeholder="Enter your mobile no here" name="tp3number" pattern="\d{10}" required>
           </div>
           <div class="input-box">
             <span class="details">Transaction ID</span>

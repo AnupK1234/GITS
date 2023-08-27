@@ -65,13 +65,16 @@ form .input-box span.details{
   font-size: 16px;
   border-radius: 5px;
   padding-left: 15px;
-  border: 1px solid #ccc;
+  border: 3px solid #ccc;
   border-bottom-width: 2px;
   transition: all 0.3s ease;
 }
 .user-details .input-box input:focus,
+.user-details .input-box input:invalid{
+  border-color: #fd0000;
+}
 .user-details .input-box input:valid{
-  border-color: #9b59b6;
+  border-color: #00ff1a;
 }
  /* form .gender-details .gender-title{
   font-size: 20px;
@@ -137,6 +140,9 @@ form .input-box span.details{
   /* transform: scale(0.99); */
   background: linear-gradient(-135deg, #71b7e6, #9b59b6);
   }
+
+  
+  /* Responsiveness Handling */
  @media(max-width: 584px){
  .container{
   max-width: 100%;
@@ -148,10 +154,10 @@ form .user-details .input-box{
   form .category{
     width: 100%;
   }
-  .content form .user-details{
+  /* .content form .user-details{
     max-height: 300px;
     overflow-y: scroll;
-  }
+  } */
   .user-details::-webkit-scrollbar{
     width: 5px;
   }
