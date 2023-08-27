@@ -12,7 +12,7 @@ body{
   justify-content: center;
   align-items: center;
   padding: 10px;
-  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  background-image: url(star-points-stains-effect.jpg);
 }
 .container{
   max-width: 700px;
@@ -34,8 +34,8 @@ body{
   position: absolute;
   left: 0;
   bottom: 0;
-  height: 3px;
-  width: 30px;
+  height: 5px;
+  width: 60px;
   border-radius: 5px;
   background: linear-gradient(135deg, #71b7e6, #9b59b6);
 }
